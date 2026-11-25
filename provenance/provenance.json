@@ -1,0 +1,44 @@
+{
+  "dataset": "Contextbench/Tracebench",
+  "manifest": "bench_manifest.full.jsonl",
+  "manifest_size_bytes": 75450201,
+  "manifest_sha256": "8f688bb147fb1840572887af10d137653b4b49523c5bbd3dc3ee9c333bbe082e",
+  "analysis_date": "2026-09-18",
+  "bootstrap_seed": 20260918,
+  "bootstrap_replicates": 2000,
+  "monte_carlo_seed": 20260918,
+  "monte_carlo_runs_per_stage_count": 200000,
+  "hugging_face_job_ids": [
+    "6aad409852d0dbd7f1d6a0fc",
+    "6aad40c452d0dbd7f1d6a106",
+    "6aad410652d0dbd7f1d6a10d",
+    "6aad419551992417dfcc6de8",
+    "6aad41f551992417dfcc6df8",
+    "6aad8aa451992417dfcc7a73",
+    "6aad8be851992417dfcc7aa5",
+    "6aad92cd52d0dbd7f1d6b70d"
+  ],
+  "note": "In the public Tracebench records, the two stage annotations indicate the absence and presence of an incorrect stage annotation, respectively. The recorded symbols for these conditions are N and I. Thus, the stage annotations alone cannot identify latent failure, detected failure, or candidate repair in our proposed stochastic reliability model.",
+  "repository_fold_strategy": "greedy_balance_by_trajectory_count_sha256_tiebreak",
+  "repository_fold_trajectory_counts": [
+    130,
+    129,
+    129,
+    129,
+    129
+  ],
+  "repository_fold_repository_counts": [
+    9,
+    9,
+    9,
+    10,
+    10
+  ],
+  "source_revision": "7da2e4f45b330be8b6e8f1cff835247723cb3341",
+  "recorded_environment": {
+    "Python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8"
+  }
+}

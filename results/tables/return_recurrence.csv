@@ -1,0 +1,6 @@
+Measure,Estimate,95% CI low,95% CI high
+"Return probability, P(I->N)",0.7333333333333333,0.6805555555555556,0.7890625
+"Persistence probability, P(I->I)",0.26666666666666666,0.2109375,0.3194444444444444
+"Recurrence after return, P(I->N->I)",0.384,0.2992125984251969,0.4666666666666667
+Trajectories with more than one incorrect-state episode,0.08978328173374613,0.0694006309148265,0.1111111111111111
+Solve rate among trajectories with an observed return,0.6802325581395349,0.6064516129032258,0.75

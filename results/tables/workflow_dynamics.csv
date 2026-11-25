@@ -1,0 +1,4 @@
+Measure,Field,Mean,Median,Min,Max
+Observable actions/steps per trajectory,step_count,30.46749226006192,29.0,1,123
+Segmented stages per trajectory,stage_count,5.273993808049536,5.0,1,15
+Incorrect/error stages per trajectory,incorrect_error_stage_count,0.6811145510835913,0.0,0,4

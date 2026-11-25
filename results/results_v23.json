@@ -1,0 +1,153 @@
+{
+  "dataset": {
+    "source": "Contextbench/Tracebench",
+    "manifest_sha256": "8f688bb147fb1840572887af10d137653b4b49523c5bbd3dc3ee9c333bbe082e",
+    "trajectories": 646,
+    "task_clusters": 426,
+    "repositories": 47
+  },
+  "terminal": {
+    "solved": 475,
+    "unsolved": 171,
+    "solve_rate": 0.7352941176470589,
+    "solve_ci95": [
+      0.690406976744186,
+      0.7770700636942676
+    ]
+  },
+  "annotation": {
+    "trajectories_with_I": 311,
+    "rate": 0.48142414860681115,
+    "rate_ci95": [
+      0.4459234608985025,
+      0.5180722891566265
+    ],
+    "solve_given_I": 0.7041800643086816,
+    "solve_given_no_I": 0.764179104477612,
+    "first_I_mean": 0.7298861374424076,
+    "first_I_ci95": [
+      0.7058425107285042,
+      0.7526956131845722
+    ],
+    "last_I_mean": 0.8626290465518761
+  },
+  "transitions": {
+    "NN": 2136,
+    "NI": 370,
+    "II": 68,
+    "IN": 187,
+    "entry": 0.14764565043894654,
+    "entry_ci95": [
+      0.1342668863261944,
+      0.16206896551724137
+    ],
+    "persistence": 0.26666666666666666,
+    "persistence_ci95": [
+      0.2109375,
+      0.3194444444444444
+    ],
+    "return": 0.7333333333333333,
+    "return_ci95": [
+      0.6805555555555556,
+      0.7890625
+    ],
+    "recurrence_after_return": 0.384,
+    "recurrence_ci95": [
+      0.2992125984251969,
+      0.4666666666666667
+    ],
+    "multi_episode_rate": 0.08978328173374613,
+    "multi_episode_ci95": [
+      0.0694006309148265,
+      0.1111111111111111
+    ],
+    "solve_given_observed_return": 0.6802325581395349,
+    "solve_given_return_ci95": [
+      0.6064516129032258,
+      0.75
+    ]
+  },
+  "heldout": {
+    "aggregate": {
+      "N": 646,
+      "MAE": 0.41335701422705834,
+      "RMSE": 0.4577452380661223,
+      "Brier": 0.20953070297221094,
+      "Log loss": 0.6112275937053985,
+      "ECE": 0.08994820497915709,
+      "Mean prediction": 0.28646478371693335,
+      "Observed": 0.28637770897832815
+    },
+    "homogeneous": {
+      "N": 646,
+      "MAE": 0.3604305218047611,
+      "RMSE": 0.4702932534723311,
+      "Brier": 0.22117574426159026,
+      "Log loss": 0.6520819710837972,
+      "ECE": 0.11885056576213555,
+      "Mean prediction": 0.16753911990954734,
+      "Observed": 0.28637770897832815
+    },
+    "position": {
+      "N": 646,
+      "MAE": 0.3943131658689993,
+      "RMSE": 0.46013854572822455,
+      "Brier": 0.2117274812648854,
+      "Log loss": 0.6184208975675443,
+      "ECE": 0.0449029749943129,
+      "Mean prediction": 0.24148671067737001,
+      "Observed": 0.28637770897832815
+    }
+  },
+  "heldout_brier_deltas": {
+    "position_minus_aggregate": {
+      "estimate": 0.0021967782926744506,
+      "ci95": [
+        -0.007496034927702733,
+        0.011160437229064957
+      ]
+    },
+    "position_minus_homogeneous": {
+      "estimate": -0.00944826299670487,
+      "ci95": [
+        -0.024189972604229726,
+        0.006250865114905219
+      ]
+    }
+  },
+  "heldout_folds": {
+    "trajectory_counts": [
+      130,
+      129,
+      129,
+      129,
+      129
+    ],
+    "repository_counts": [
+      9,
+      9,
+      9,
+      10,
+      10
+    ]
+  },
+  "monte_carlo": {
+    "runs_per_stage_count": 200000,
+    "max_position_mc_se": 0.0009686779335129917,
+    "max_position_abs_error": 0.0019710593426758294
+  },
+  "config": {
+    "dataset": "Contextbench/Tracebench",
+    "manifest_filename": "bench_manifest.full.jsonl",
+    "expected_manifest_sha256": "8f688bb147fb1840572887af10d137653b4b49523c5bbd3dc3ee9c333bbe082e",
+    "swe_source_prefix": "swe_raw/",
+    "bootstrap_seed": 20260918,
+    "bootstrap_replicates": 2000,
+    "repository_folds": 5,
+    "monte_carlo_seed": 20260918,
+    "monte_carlo_runs_per_stage_count": 200000,
+    "position_bins": 5,
+    "calibration_bins": 10,
+    "repository_fold_strategy": "greedy_balance_by_trajectory_count_sha256_tiebreak"
+  }
+}

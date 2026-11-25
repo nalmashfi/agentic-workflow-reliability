@@ -1,0 +1,14 @@
+{
+  "dataset": "Contextbench/Tracebench",
+  "manifest_filename": "bench_manifest.full.jsonl",
+  "expected_manifest_sha256": "8f688bb147fb1840572887af10d137653b4b49523c5bbd3dc3ee9c333bbe082e",
+  "swe_source_prefix": "swe_raw/",
+  "bootstrap_seed": 20260918,
+  "bootstrap_replicates": 2000,
+  "repository_folds": 5,
+  "monte_carlo_seed": 20260918,
+  "monte_carlo_runs_per_stage_count": 200000,
+  "position_bins": 5,
+  "calibration_bins": 10,
+  "repository_fold_strategy": "greedy_balance_by_trajectory_count_sha256_tiebreak"
+}
